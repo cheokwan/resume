@@ -1,0 +1,194 @@
+\documentclass[margin,line]{res}
+\setlength{\pdfpageheight}{\paperheight}
+\setlength{\pdfpagewidth}{\paperwidth}
+
+%\usepackage{helvet}
+%\renewcommand{\sfdefault}{phv}
+%\renewcommand{\familydefault}{\sfdefault}
+
+\topmargin -.75in
+\textheight 10.25in
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.25in
+\itemsep=0in
+\parsep=0in
+
+\newcommand{\sstyle}{\sc}
+\newenvironment{clist}{
+  \begin{list}{$\bullet$}{
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in}
+      \setlength{\topsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}
+  {\end{list}}
+
+\begin{document}
+\name{Jason Cheok Wan \vspace*{.1in}}
+\begin{resume}
+%  \section{\sstyle Contact Information}
+  {\small
+  \vspace*{-.1in}
+  \hspace*{-1.3in}jasonwan415@gmail.com \hfill 439 Topaz Terrace, Sunnyvale, CA 94089, USA\\
+  \hspace*{-1.3in}\hfill (415) 900-9941}
+
+  \vspace*{-.1in}
+  \section{\sstyle Objective}
+  A software development position that allows me to work on cool, smart, and
+  elegant applications that embrace the internet and matter to people.
+
+  \section{\sstyle Education}
+  {\bf University of California, Berkeley}\\
+  {\bf B.S. in Electrical Engineering and Computer Science}\hspace{.1in}(GPA 3.56/4.00) \hfill May 2010
+
+  \section{\sstyle Summary of Qualifications}
+  \begin{itemize}
+  \item Skillful in problem-solving, investigation, and research.
+        Able to take on complex problems independently or collaboratively.
+%  \item Good analytical skill and scrutiny on details enable me to prevent,
+%        isolate, or actively tackling problems.
+  \item Quick learner and open-minded to new technologies. Motivated to tackle
+        new challenges. Eager to grow and be inspired by innovative ideas and
+        elegant approaches.
+  \item Survived and thrived in multiple fast-paced startup environments with
+        proven ownership to mission critical projects and features.
+  \item Generalist with a wide spectrum of computer science and software
+        engineering knowledge.
+%  \item Strive for elegant, clean, and scalable solutions while getting
+%        the job done.
+%  \item Enjoy working in groups where effective communications and
+%        practical opinions and criticisms are observed.
+%  \item Passionate and enthusiastic for working in the field of computing.
+  \end{itemize}
+
+  \section{\sstyle Professional Experience}
+  {\bf Lead Mobile Engineer -- Nbition Development Limited}, Hong Kong\hfill Nov 2013 -- Apr 2014
+  \vspace{.05in}
+  \begin{itemize}
+  \item First employee. Single-handedly built the Garffee iOS app from scratch
+        for demonstrating a ``Smart-Cafe'' idea which earned initial acclaims
+        and fundings from the Hong Kong government and investors.
+        The app allows user to pre-order on the go and feeds location tracking
+        data to the order scheduling backend to eliminate waiting in line and
+        ensure a smooth and fresh pickup at store.
+  \item Handled every aspect of building a production level iOS client against a
+        RESTful web service backend and Facebook API integration. Owned the MVC
+        design and wrote in quick iterations everything from UI, animations,
+        networking, data model and persistence, to unit-testing, and
+        documentation.
+  \item Prototyped a feature for fingerprinting high-frequency sound waves
+        which serves as a unique solution to the indoor positioning problem.
+        It involves digital signal processing techniques such as fast Fourier
+        transform.
+  \item Displayed a heart for quality by taking ownership and initiatives to
+        deliver a user experience driven product with many subtle details and
+        animations addressed.
+  \end{itemize}
+
+  {\bf Senior Software Engineer -- Divide (Enterproid Inc.)}, Hong Kong\hfill Nov 2012 -- Nov 2013
+  \vspace{.05in}
+  \begin{itemize}
+  \item Core developer of the Divide iOS client - a secure and isolated BYOD
+        container for any business data residing on personal devices. Work
+        encompasses a wide scope of the Cocoa stack from UI to runtime
+        functions hooking. Also contributed to components such as the Exchange
+        mail sync engine, mail parser, and VPN. Pushing the limits of iOS
+        enterprise functionality and improved the overall product quality.
+  \item Developed a core FIPS-compliant Public Key Infrastructure library shared
+        between Android and iOS using C/C++ and OpenSSL. It forms the basis of
+        the S/MIME mail feature which I also implemented on the iOS side.
+  \item Led and managed a team of 4 developers on both Android and iOS for the
+        Divide Files feature - a file manager for storing mail attachments and
+        cloud-storage files securely and sharing them between the container
+        and enterprise patched apps. Contributed to the overall design and
+        the majority of coding done on iOS.
+  \item Improved the security and stability of the enterprise patched app
+        feature on iOS.
+        %By patching a custom dylib which performs all sorts of function hooking
+        %it enables the secure container on many ordinary apps.
+        Incorporated a secure and creative data sharing channel between the
+        main container and patched apps by implementing a mini SSL like protocol
+        over the pasteboard API.
+  \item Bullet-proofed the jailbreak detection feature by adding a runtime code
+        signing signature check for any loaded Mach-O dylib's.
+  \end{itemize}
+
+  {\bf Software Engineer -- Silver Spring Networks}, Redwood City, CA USA\hfill Aug 2010 -- Jun 2012
+  \vspace{.05in}
+  \begin{itemize}
+  \item Took major responsibilities in developing Nodesim - a network device
+        simulation product for virtualizing smart grid devices in scale,
+        during which I took initiatives in the design, implementation,
+        quality control, maintenance, and knowledge transfer of the product.
+  \item Practiced network programming in C/C++ on Linux platforms with a
+        multi-process, request-driven approach, during which I gained
+        experience in:
+        \begin{itemize}
+        \item implementing dual-stack IPv4/IPv6 server/client applications.
+        \item virtualizing the network stack and protocol of smart grid devices
+              in pure software by modifying the low-level C code from device
+              firmware and linking them against high-level application code.
+        \item employing packet sniffing and spoofing using raw sockets and
+              libpcap, making the simulated traffic transparent to other
+              integrated back office software.
+%        \item deriving solutions from device specifications and RFCs with
+%              little explicit instructions.
+        \end{itemize}
+%  \item Built a light and robust mini name server in C/C++ for managing
+%        multiple instances of the simulation tool hosting on the same server.
+  \item Worked part-time in the middle tier and back end of a multi-tier Java EE
+        web application which employs Spring, Tomcat, and Oracle. Incorporated
+        a feature for automatic schema migration between version upgrades.
+  \item Invented a UDP traffic forwarder in Python using raw sockets for
+        multicasting packets as is to various destinations.
+  \end{itemize}
+
+  \section{\sstyle Highlights of Coursework and Projects}
+  {\sl Programming Languages and Compilers}
+%  \vspace{.05in}
+  \begin{itemize}
+  \item Developed a dynamically typed interpreted language with extensions such
+        as coroutine and list comprehension; all based on a lexer, Earley parser
+        generator, and bytecode interpreter built from scratch.
+%  \item Implemented a simple HTML rendering engine by writing code in the
+%        language above to traverse the DOM generated from HTML by the parser
+%        generator.
+  \end{itemize}
+
+%  {\sl Operating Systems and System Programming}
+%  \vspace{.05in}
+%  \begin{itemize}
+%  \item Complemented the educational NachOS with a thread system,
+%        multiprogramming support and system calls, virtual memory and
+%        paging, and a simple network protocol similar to TCP/IP.
+%  \end{itemize}
+
+%  {\sl Introduction to Communication Networks}
+%  \vspace{.05in}
+%  \begin{itemize}
+%  \item Implemented basic features of TCP with congestion control using
+%        UDP and Java threads and synchronization.
+%  \end{itemize}
+
+  {\sl Efficient Algorithms and Intractable Problems}\hspace{.5in}
+  {\sl Operating Systems and System Programming}\vspace{.05in}\\
+  {\sl Intoduction to Communication Networks}\hspace{.82in}
+  {\sl Introduction to Artificial Intelligence}\vspace{.05in}\\
+  {\sl Foundations of Computer Graphics}\hspace{1.14in}
+  {\sl Computer Architecture and Engineering}\vspace{.05in}\\
+
+  \section{\sstyle Skills}
+  \begin{description}
+  \item[{\it Development:}] Objective-C/iOS, C/C++, Python, Java, Scheme, Bash, Linux, OpenSSL;
+    some experience with J2EE, Spring, Oracle, JavaScript, and Ajax;
+    OpenGL, PL/SQL, MIPS assembly, \LaTeX{}.
+  \item[{\it Tools:}] Vim, Emacs, Xcode, Eclipse, Git, Perforce, SVN, gdb, make, ssh, tcpdump, JIRA, Scrum, etc.
+  \item[{\it Languages:}] English, Cantonese, Mandarin.
+  \end{description}
+
+%  \section{\sstyle Personal}
+%  US citizen
+
+\end{resume}
+\end{document}
